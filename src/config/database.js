@@ -17,6 +17,7 @@ const MUSIC_SCHEMA = `CREATE TABLE IF NOT EXISTS music (
 const SINGER_SCHEMA = `CREATE TABLE IF NOT EXISTS singer (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name VARCHAR(40) NOT NULL,
+    nacionalidade VARCHAR(40) NOT NULL,
     fk_album INTEGER,
     FOREIGN KEY(fk_album) REFERENCES album(id)
 )`
